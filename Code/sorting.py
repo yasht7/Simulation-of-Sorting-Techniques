@@ -91,17 +91,18 @@ def merge_sort_perform(alist):
             else:
                 alist[k]=righthalf[j]
                 j += 1
-            k=k+1
+            k+=1
 
         while i < len(lefthalf):
             alist[k]=lefthalf[i]
             i += 1
-            k=k+1
+            k+=1
 
         while j < len(righthalf):
             alist[k] = righthalf[j]
-            j=j+1
-            k=k+1
+            j+=1
+            k+=1
+            
     return alist
 
 
